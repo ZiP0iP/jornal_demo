@@ -1,0 +1,30 @@
+﻿@model jornal_demo.Models.Car
+@using jornal_demo.Models;
+
+@{
+    ViewBag.Title = "Описание";
+}
+
+<h2>Опции автомобиля</h2>
+
+<div class="display-label"><b>Марка машины</b></div>
+<div class="display-field">
+    @Html.DisplayFor(model => model.Name)
+</div>
+
+<div class="display-label"><b>Описание</b></div>
+<div class="display-field">
+    @Html.DisplayFor(model => model.Description)
+</div>
+
+<div class="display-label"><b>Опции</b></div>
+<ui>
+    @foreach (Option opt in Model.Options)
+    {
+        <li> @opt.Name</li>
+    }
+</ui>
+
+<div>
+    @Html.ActionLink("Назад", "Index")
+</div>
