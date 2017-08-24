@@ -17,6 +17,11 @@
     @Html.DisplayFor(model => model.Description)
 </div>
 
+<div class="display-label"><b>Веб сайт</b></div>
+<div class="display-field">
+    @Html.DisplayFor(model => model.Weburl)
+</div>
+
 <div class="display-label"><b>Опции</b></div>
 <ui>
     @foreach (Option opt in Model.Options)
