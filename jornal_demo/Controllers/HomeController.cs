@@ -14,6 +14,7 @@ namespace jornal_demo.Controllers
         public ActionResult Index()
         {
             return View(db.Cars.ToList());
+
         }
 
 
@@ -26,7 +27,7 @@ namespace jornal_demo.Controllers
             {
                 return HttpNotFound();
             }
-            return View(car);
+            return View(car);          
         }
 
 
