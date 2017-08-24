@@ -10,6 +10,8 @@ namespace jornal_demo.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
+
+        [DataType(DataType.MultilineText)]
         public string Description { get; set; }
 
         [DataType(DataType.Url)]
